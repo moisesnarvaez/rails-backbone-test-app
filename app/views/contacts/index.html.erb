@@ -1,0 +1,46 @@
+<!-- <h1>Contacts</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Created at</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @contacts.each do |contact| %>
+      <tr>
+        <td><%= contact.id %></td>
+        <td><%= link_to contact.name, contact_path(contact) %></td>
+        <td><%= contact.created_at %></td>
+        <td>
+          <%= link_to 'Edit', edit_contact_path(contact), :class => 'btn btn-mini' %>
+          <%= link_to 'Destroy', contact_path(contact), :method => :delete, :confirm => 'Are you sure?', :class => 'btn btn-mini btn-danger' %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to 'New', new_contact_path, :class => 'btn btn-primary' %> -->
+
+<div class="container-fluid">
+    <h1>Contacts</h1>
+    <a href="#contacts/new" class="btn btn-primary">New Contact</a>
+    <br/><br/>
+    <div class="row">
+       <div class="span12" id="notifications"></div>
+    </div>
+</div>
+<br/>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span3" id="container">
+      <!--Sidebar content-->
+    </div>
+    <div class="span9" id="detail">
+      <!--Body content-->
+    </div>
+  </div>
+</div>

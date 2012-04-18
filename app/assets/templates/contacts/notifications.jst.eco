@@ -1,0 +1,5 @@
+<div class="alert <%= @notification.get('className') %>">
+  <a class="close" data-dismiss="alert">×</a>
+  <h4 class="alert-heading">Messages:</h4>
+  <%= @safe (@notification.get('message')) %>
+</div>

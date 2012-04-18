@@ -1,0 +1,1 @@
+class Agenda2.Models.Notification extends Backbone.Model

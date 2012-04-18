@@ -1,0 +1,2 @@
+<div class="icon-trash icon-delete" rel="tooltip" data-original-title="Delete" title="Delete"></div>
+<a href="#contacts/<%= @contact.get('id') %>/edit"><%= @contact.get('name') %> <%= @contact.get('lastname') %></a>
